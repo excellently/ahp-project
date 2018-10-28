@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, shrink-to-fit=no">
+  <meta name="description" content="Метод анализа иерархий">
+  <meta name="keywords" content="метод анализа иерархий, метод Саати">
+  <meta name="author" content="Artyom Matevosyan">
+  <link rel="shortcut icon" href="img/house.ico" type="image/x-icon">
+  <title>Метод анализа иерархий</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/4.2.1/resources/ext-theme-classic/ext-theme-classic-all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/extjs/4.2.1/ext-all.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main id="main" class="main">
+      <header>
+        <div class="hdr center">
+          <div>
+            <span>М</span><span>е</span><span>т</span><span>о</span><span>д</span>
+          </div>
+          <div>
+            <span>А</span><span>н</span><span>а</span><span>л</span><span>и</span><span>з</span><span>а</span>
+          </div>
+          <div>
+            <span>И</span><span>е</span><span>р</span><span>а</span><span>р</span><span>х</span><span>и</span><span>й</span>
+          </div>
+        </div>
+      </header>
+      <div><input id="readInfo" tabIndex='-1' class="descriptionButton" type="button" value="Описание"></div>
+      <section id="tabPanel" class="tabPanel"></section>
+  </div>
+  </main>
+  </div>
+
+  <style type="text/css">
+    #hellopreloader>p {
+      display: none;
+    }
+
+    #hellopreloader_preload {
+      display: block;
+      position: fixed;
+      z-index: 99999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-width: 1000px;
+      background: #22A7F0 url(http://hello-site.ru//main/images/preloads/spinning-circles.svg) center center no-repeat;
+      background-size: 41px;
+    }
+  </style>
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload"></div>
+    <p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p>
+  </div>
+  <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) {
+      el.style.opacity = 1;
+      var interhellopreloader = setInterval(function () {
+        el.style.opacity = el.style.opacity - 0.05;
+        if (el.style.opacity <= 0.05) {
+          clearInterval(interhellopreloader);
+          hellopreloader.style.display = "none";
+        }
+      }, 16);
+    }
+    window.onload = function () {
+      setTimeout(function () {
+        fadeOutnojquery(hellopreloader);
+      }, 1000);
+    };
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter43058744 = new Ya.Metrika2({
+            id: 43058744,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            ut: "noindex"
+          });
+        } catch (e) {}
+      });
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks2");
+  </script> <noscript>
+    <div><img src="https://mc.yandex.ru/watch/43058744?ut=noindex" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>

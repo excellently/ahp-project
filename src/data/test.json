@@ -1,0 +1,35 @@
+{
+	"inputData": {
+		"criterions": {
+			"values": ["ПЗУ", "ОЗУ", "Цена", "Вес", "Камера"],
+			"object": [0, 0, 1, 1, 0]
+		},
+		"alternatives": ["Apple Iphone 7 plus", "Samsung 7 Edge", "Huawei P9"]
+	},
+	"matrixValues": [
+		{
+			"values": [["1/5", "1/8", "5", "1/5"], ["1/3", "8", "1/2"], ["9", "4"], ["1/7"]],
+			"direction": "none"
+		},
+		{
+			"values": [["8", "6"], ["1/3"]],
+			"direction": "none"
+		},
+		{
+			"values": [["1/5", "1/1"], ["5"]],
+			"direction": "none"
+		},
+		{
+			"values": ["48000", "35000", "23000"],
+			"direction": "bottom"
+		},
+		{
+			"values": ["188", "152", "144"],
+			"direction": "bottom"
+		},
+		{
+			"values": [["3", "4"], ["2"]],
+			"direction": "none"
+		}
+	]
+}
